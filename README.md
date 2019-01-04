@@ -3,7 +3,7 @@
 
 | # | 笔记 | Description |
 | ---- | -------------- | ----------------- |
-| 1 | [在readme里面添加图片](./notes/addImg.md)|在Readme.md里面添加图片 |
-| 2 | [Locally && Remotely更改 commits history](./notes/editCommit.md)| 1. 删除已经push的commits <br> 2.删除没有push的commits（TODO）|
+| 1 | [在readme里面添加图片](./notes/addImg.md)|不仅仅是readme，是所有**.md**文件 |
+| 2 | [Locally && Remotely更改 commits history](./notes/editCommit.md)| 1. 删除已经push的commits 2.删除没有push的commits（TODO）|
 
 
