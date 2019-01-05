@@ -2,7 +2,7 @@
 
 关于对commits的操作有很多，要一直积累总结
 
-### 对已经push的commits进行delete 
+## 对已经push的commits进行delete 
 把last 2 commits显示出来
 
 `git rebase -i HEAD~2`
