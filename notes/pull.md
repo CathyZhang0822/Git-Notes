@@ -1,3 +1,28 @@
+# git fetch   
+
+credits: https://blog.csdn.net/Sevk/article/details/6040420
+
+1. git fetch：相当于是从远程获取最新版本到本地，不会自动merge  
+```
+git fetch origin master
+git log -p master..origin/master
+git merge origin/master
+```
+以上命令的含义：  
+首先从远程的origin的master主分支下载最新的版本到origin/master分支上  
+然后比较本地的master分支和origin/master分支的差别  
+最后进行合并  
+
+上述过程其实可以用以下更清晰的方式来进行：  
+```
+git fetch origin master:tmp
+git diff tmp 
+git merge tmp
+```
+从远程获取最新的版本到本地的test分支上之后再进行比较合并
+
+
+
 # git pull 命令
 git pull命令完整格式比较长，先从最简单的origin + master来开始记录
 
@@ -13,3 +38,5 @@ git pull命令完整格式比较长，先从最简单的origin + master来开始
 此时 H commit就是自动产生的一个'merge' commit.
 
 中途可能会产生conflict 需要解决
+
+#1
