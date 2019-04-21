@@ -3,9 +3,10 @@
 场景1：**unstaged:** 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令
 ```$ git checkout -- file```
 
-场景2：**staged:** 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令
+场景2.1：**staged code change:** 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令
 ```$ git reset HEAD file```
-就回到了场景1，第二步按场景1操作。(git reset默认是mixed)
+就回到了场景1，第二步按场景1操作。(git reset默认是mixed)   
+场景2.2：**staged file** 当你add了一个file，但是想撤回staged file。这时用 ```git reset filename.txt```
 
 场景3：已经commit，想要撤销本次提交，git reset --hard,不过前提是没有推送到远程仓库。
 
