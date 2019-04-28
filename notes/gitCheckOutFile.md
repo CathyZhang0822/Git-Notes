@@ -1,7 +1,13 @@
 
 # 几种撤销场景
-场景1：**unstaged:** 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令
-```$ git checkout -- file```
+场景1.1：**unstaged(code change):** 当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令
+```$ git checkout -- file```   
+场景1.2：**unstaged file/folder:** 当你误创建了一些file/folders，想要舍弃，这时候`git checkout`就无法做到了，这时候需要
+用`git clean`   
+```$ git clean -f```   
+To remove directories, run `git clean -f -d` or`git clean -fd`   
+To remove ignored files, run `git clean -f -X` or `git clean -fX`   
+To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx`
 
 场景2.1：**staged code change:** 当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令
 ```$ git reset HEAD file```
