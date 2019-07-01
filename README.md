@@ -9,4 +9,5 @@
 | 4 | [Ignore files that have already be pushed](./notes/ignoreFile.md)|对于没有tracked/committed/pushed files, 我们只需要在.gitignore 里面添加就好了。但是对于已经tracked files, 应该怎么做呢？|
 | 5 | [Git撤销操作](./notes/gitCheckOutFile.md) |撤销 unstaged/staged/commited/pushed changes|
 | 6 | [Git Branches遇到各种senario](./notes/gitBranch.md) |1. 在一个branch里新建的file也出现在了其他branch|
+| 7 | [Phabricator Stacked Diff Workflow](./notes/Stacked_Diffs.md) |Create stacked diffs|
 
