@@ -78,15 +78,10 @@ PUSHING  Pushing changes to "origin/master".
 ...
 DONE  Landed changes.
 ```
-Let's take a look to make sure that everything went OK:
+Land child commit:   
 ```
-✔ ~/Projects/phab/willyd [master|✔] $ arc branch
-  willB  Needs Review D671: Add work in b
-* master Closed       D670: Create simple directory. Add initial work in a
+git pull --rebase origin master
+arc land --keep-branch
 ```
-Land:
-```
-arc land --revision D671
-```
-You can't use `arc land` because diff from willB to master contains both commits.
+You can't use `arc land` or `arc land --revision D671` because diff from willB to master contains both commits.
   
