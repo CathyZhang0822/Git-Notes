@@ -49,6 +49,8 @@ Included changes:
  ```
  Also add `depends on D12345` in your diff's summary
  
+ **Update: `arc diff` will also do. Now `arc diff parentBranch` will cause build error**
+ 
  ## Edit parent commits
  Switch to willA branch. Make some change. Then `git add -A` and `git commit --amend`
  Switch to master. Run `git pull`
