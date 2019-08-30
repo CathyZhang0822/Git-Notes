@@ -10,4 +10,5 @@
 | 5 | [Git撤销操作](./notes/gitCheckOutFile.md) |撤销 unstaged/staged/commited/pushed changes|
 | 6 | [Git Branches遇到各种senario](./notes/gitBranch.md) |1. 在一个branch里新建的file也出现在了其他branch|
 | 7 | [Phabricator Stacked Diff Workflow](./notes/Stacked_Diffs.md) |Create stacked diffs|
+| 8 | [Change upstream](./notes/changeUpstream.md)| Change upstream, rebase child branch to master|
 
