@@ -11,4 +11,5 @@
 | 6 | [Git Branches遇到各种senario](./notes/gitBranch.md) |1. 在一个branch里新建的file也出现在了其他branch|
 | 7 | [Phabricator Stacked Diff Workflow](./notes/Stacked_Diffs.md) |Create stacked diffs|
 | 8 | [Change upstream](./notes/changeUpstream.md)| Change upstream, rebase child branch to master|
+| 9 | [把local连接到github和heroku](./notes/heroku.md)| 创建remotes, 链接remotes|
 
