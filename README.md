@@ -18,5 +18,5 @@
 | 2 | [Flask db migration](./notes/db.md)| Flask db migration相关命令 |
 | 3 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
 | 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
-| | **frontend** | |
+| | **Frontend** | |
 | 1 | [Template inheritance](./notes/templates.md)| flask html里面的`block`, `extend`, `super`.. 等代表什么呢？|
