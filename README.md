@@ -17,4 +17,4 @@
 | 10 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
 | 11 | [Flask db migration](./notes/db.md)| Flask db migration相关命令 |
 | 12 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
-| 13 | [Postgres](./notes/postgres.md)| 常见postgres commands|
+| 13 | [Postgres](./notes/postgress_commands.md)| 常见postgres commands|
