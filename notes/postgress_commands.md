@@ -1,5 +1,7 @@
 # 常见的Postgres commands
 
+**注意**：PostgreSQL interprets `"` as being quotes for identifiers, `'` as being quotes for strings.
+
 | description | command |
 | ---- | --- |
 | Describe table | `\d <table name>` |
