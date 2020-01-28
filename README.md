@@ -14,7 +14,9 @@
 | 8 | [Change upstream](./notes/changeUpstream.md)| Change upstream, rebase child branch to master|
 | 9 | [把local连接到github和heroku](./notes/heroku.md)| 创建remotes, 链接remotes|
 | | **Python, framework, 以及相关数据库** | |
-| 10 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
-| 11 | [Flask db migration](./notes/db.md)| Flask db migration相关命令 |
-| 12 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
-| 13 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
+| 1 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
+| 2 | [Flask db migration](./notes/db.md)| Flask db migration相关命令 |
+| 3 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
+| 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
+| | **frontend** | |
+| 1 | [Template inheritance](./notes/templates.md)| flask html里面的`block`, `extend`, `super`.. 等代表什么呢？|
