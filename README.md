@@ -20,3 +20,4 @@
 | 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
 | | **Frontend** | |
 | 1 | [Template inheritance](./notes/templates.md)| flask html里面的`block`, `extend`, `super`.. 等代表什么呢？|
+| 2 | [Bootstrap](./notes/bootstrap.md) | 1. 如何导入bootstrap? |
