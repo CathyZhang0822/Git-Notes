@@ -93,6 +93,7 @@ In my personal_site app case: （我下面这个好像不对，port有问题）
 web: flask run
 ```
 别人用gunicorn的例子：
+`__init__`是创建APP的
 ```
 web: gunicorn -w 4 -b "0.0.0.0:$PORT" __init__:app
 ```
