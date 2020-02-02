@@ -82,6 +82,18 @@ Web URL:        https://yuelin.herokuapp.com/
 ### Viewing logs
 `heroku logs --tail`
 
+### SSH Tunneling
+1. Check running dyno:
+`heroku ps`
+
+2. Restart a web
+`heroku restart web.1`
+
+3. SSH
+`heroku ps:exec`
+or specify a dyno:
+`heroku ps:exec --dyno=web.2`
+
 # Setup a Heroku app step by step
 1. Create an empty Heroku app and add it to remote
 ```
