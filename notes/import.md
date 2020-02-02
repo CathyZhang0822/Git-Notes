@@ -12,4 +12,4 @@ repo/
       mod2.py
 ```
 很多时候我们会在同一个app里面import来import去的，最简单的方法就是把`repo`所在的parent folder加到`PYTHONPATH`里面去。   
-The simplest solution is to put the directory containing repo in your PYTHONPATH, and then just use absolute-path imports, e.g. import repo.sub2.mod2 and so on.
+The simplest solution is to put the directory containing repo in your PYTHONPATH, and then just use absolute-path imports, e.g. `import repo.sub2.mod2` and so on.
