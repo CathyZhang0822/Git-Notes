@@ -46,6 +46,8 @@ Web URL:        https://yuelin.herokuapp.com/
 or specify a dyno:
 `heroku ps:exec --dyno=web.2`
 
+**`heroku run bash` !!!!!!!!!!!!!!!**
+
 # Setup a Heroku app step by step
 1. Create an empty Heroku app and add it to remote
 ```
