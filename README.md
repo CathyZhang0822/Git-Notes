@@ -21,3 +21,4 @@
 | | **Frontend** | |
 | 1 | [Template inheritance](./notes/templates.md)| flask html里面的`block`, `extend`, `super`.. 等代表什么呢？|
 | 2 | [Bootstrap](./notes/bootstrap.md) | 1. 如何导入bootstrap? |
+| 3 | [Images](./notes/images.md) | 1. 前端如何serve pictures？|
