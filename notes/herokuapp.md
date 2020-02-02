@@ -28,6 +28,9 @@ Web URL:        https://yuelin.herokuapp.com/
 ### Deploying code
 `git push heroku master`
 
+### Test locally
+`heroku local`
+
 ### Viewing logs
 `heroku logs --tail`
 
