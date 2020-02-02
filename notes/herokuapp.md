@@ -88,11 +88,11 @@ FLASK_APP: __init__.py
 ```
 
 4. Create Procfile
-In my personal_site app case:
+In my personal_site app case: （我下面这个好像不对，port有问题）
 ```
 web: flask run
 ```
 别人用gunicorn的例子：
 ```
-web: gunicorn -w 4 -b "0.0.0.0:$PORT" __init__.py:app
+web: gunicorn -w 4 -b "0.0.0.0:$PORT" __init__:app
 ```
