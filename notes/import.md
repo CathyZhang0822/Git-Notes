@@ -17,3 +17,7 @@ ie:
 ```
 export PYTHONPATH=/Users/yuelinzhang/Desktop/CS/:$PYTHONPATH
 ```
+或者更加general
+```
+export PYTHONPATH=$(cd .. && pwd):$PYTHONPATH
+```
