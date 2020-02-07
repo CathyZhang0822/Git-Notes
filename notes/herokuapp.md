@@ -97,3 +97,29 @@ web: flask run
 ```
 web: gunicorn -w 4 -b "0.0.0.0:$PORT" __init__:app
 ```
+# Connect to Postgresql database
+1. 添加addon   
+``
+heroku addons:create heroku-postgresql:hobby-dev
+``
+hobby-dev 是那个免费的Plan
+2. 
+``
+heroku ps:info
+heroku addons
+heroku confg
+``
+三连来查看   
+3.  Connecting to Python   
+`pip install psycopg2-binary`
+
+```python
+import os
+import psycopg2
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+```
+
+
