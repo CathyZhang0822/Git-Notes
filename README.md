@@ -15,7 +15,7 @@
 | 9 | [把local连接到github和heroku](./notes/heroku.md)| 创建remotes, 链接remotes|
 | | **Python, framework, 以及相关数据库** | |
 | 1 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
-| 2 | [Flask db migration](./notes/db.md)| Flask db migration相关命令 |
+| 2 | [Flask db](./notes/db.md)| 1.Flask db migration相关命令 2.一些常用commands的使用和理解|
 | 3 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
 | 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
 | 5 | [Heroku Setup](./notes/herokuapp.md)| 1. 常见的heroku commands <br> 2.Heroku app setup step by step|
