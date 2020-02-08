@@ -22,3 +22,7 @@ _________ 以上是第一次做的__________
 还可以加一句话：`flask db migrate -m "Initial migration."`   
 5. `flask db upgrade`
 
+### db.session.commit() 与 db.session.flush()
+`session.flush()` communicates a series of operations to the database (insert, update, delete). The database maintains them as pending operations in a transaction. The changes aren't persisted permanently to disk, or visible to other transactions until the database receives a COMMIT for the current transaction (which is what `session.commit()` does).   
+
+如果只用`session.flush()`的话，别人是无法看到的。`flush`只是保存**自己session**的变化，我们可以理解每一个窗口就是一个session
