@@ -104,11 +104,11 @@ heroku addons:create heroku-postgresql:hobby-dev
 ``
 hobby-dev 是那个免费的Plan
 2. 
-``
+```
 heroku ps:info
 heroku addons
 heroku confg
-``
+```
 三连来查看   
 3.  Connecting to Python   
 `pip install psycopg2-binary`
