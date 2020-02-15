@@ -25,3 +25,4 @@
 | 2 | [Bootstrap](./notes/bootstrap.md) | 1. 如何导入bootstrap? |
 | 3 | [Images](./notes/images.md) | 1. 前端如何serve pictures？|
 | 4 | [Class vs ID](./notes/class_and_id.md) | HTML中 class和ID 区别|
+| 5 | [jQuery](./notes/jquery.md)| 1.DOM Traversal and Manipulation <br> 2.Event Handling <br> 3.Ajax |
