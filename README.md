@@ -13,6 +13,7 @@
 | 7 | [Phabricator Stacked Diff Workflow](./notes/Stacked_Diffs.md) |Create stacked diffs|
 | 8 | [Change upstream](./notes/changeUpstream.md)| Change upstream, rebase child branch to master|
 | 9 | [把local连接到github和heroku](./notes/heroku.md)| 创建remotes, 链接remotes|
+| 10 | [一些有用的命令](./notes/commands.md)|1. 在bash，查看和set environment variables|
 | | **Python, framework, 以及相关数据库** | |
 | 1 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
 | 2 | [Flask db](./notes/db.md)| 1.Flask db migration相关命令 2.一些常用commands的使用和理解|
