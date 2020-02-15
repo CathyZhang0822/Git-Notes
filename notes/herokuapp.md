@@ -76,9 +76,16 @@ deactivate
 一个简单的办法， 在root folder:
 `$ pip freeze > requirements.txt`
 
-4. Set Env variables 
+4. Get/Set/Delete Env variables 
+```
+heroku config:get GITHUB_USERNAME
+```
 ```
 heroku config:set FLASK_APP=<your flask app path> 
+```
+```
+heroku config:unset GITHUB_USERNAME
+Unsetting GITHUB_USERNAME and restarting myapp... done, v13
 ```
 check configs:
 ```
