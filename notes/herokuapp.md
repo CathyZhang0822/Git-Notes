@@ -132,3 +132,6 @@ conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 1. 先到heroku app的bash `heroku run bash`   
 2. cd 到app的根目录 `cd app`   
 3. `flask db upgrade` 一般情况下我们在local run `flask db migrate`，然后把migration file push上去   
+### 5. 进入到heroku的db 
+`heroku pg:psql`   
+
