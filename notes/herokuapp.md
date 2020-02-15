@@ -105,19 +105,19 @@ web: flask run
 web: gunicorn -w 4 -b "0.0.0.0:$PORT" __init__:app
 ```
 # Connect to Postgresql database
-1. 添加addon   
+### 1. 添加addon   
 ``
 heroku addons:create heroku-postgresql:hobby-dev
 ``
 hobby-dev 是那个免费的Plan
-2. 
+### 2. Check addons
 ```
 heroku ps:info
 heroku addons
 heroku confg
 ```
 三连来查看   
-3.  Connecting to Python   
+### 3.  Connecting to Python   
 `pip install psycopg2-binary`
 
 ```python
@@ -128,5 +128,7 @@ DATABASE_URL = os.environ['DATABASE_URL']
 
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 ```
-
-
+### 4. Prduction DB migration/update
+1. 先到heroku app的bash `heroku run bash`   
+2. cd 到app的根目录 `cd app`   
+3. `flask db upgrade` 一般情况下我们在local run `flask db migrate`，然后把migration file push上去   
