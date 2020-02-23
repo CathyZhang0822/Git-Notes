@@ -29,3 +29,4 @@
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
+| 4 | [Comments](./notes/comments.md)|1.Don’t Use a Comment When You Can Use a Function or a Variable <br> 2. Some comments are necessary or beneficial. |
