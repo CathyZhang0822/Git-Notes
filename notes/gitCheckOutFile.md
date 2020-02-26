@@ -19,7 +19,14 @@ To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx
 场景4：不小心删除了一个file，这个删除操作一般是自动stage
 1. `git restore --unstaged <file>`
 2. `git restore <file>`
-
+以上方法第二天就不管用了
+Assuming you're wanting to undo the effects of `git rm <file> or rm <file>` followed by `git add -A` or something similar:
+```
+# this restores the file status in the index
+git reset -- <file>
+# then check out a copy from the index
+git checkout -- <file>
+```
 作者：胜天半子bibi酱
 链接：https://juejin.im/post/5abef8356fb9a028df22bd78
 
