@@ -16,6 +16,10 @@ To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx
 
 场景3：已经commit，想要撤销本次提交，git reset --hard,不过前提是没有推送到远程仓库。
 
+场景4：不小心删除了一个file，这个删除操作一般是自动stage
+1. `git restore --unstaged <file>`
+2. `git restore <file>`
+
 作者：胜天半子bibi酱
 链接：https://juejin.im/post/5abef8356fb9a028df22bd78
 
