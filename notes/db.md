@@ -26,3 +26,34 @@ _________ 以上是第一次做的__________
 `session.flush()` communicates a series of operations to the database (insert, update, delete). The database maintains them as pending operations in a transaction. The changes aren't persisted permanently to disk, or visible to other transactions until the database receives a COMMIT for the current transaction (which is what `session.commit()` does).   
 
 如果只用`session.flush()`的话，别人是无法看到的。`flush`只是保存**自己session**的变化，我们可以理解每一个窗口就是一个session
+
+# Relationships
+## One-to-Many
+The most common relationships are one-to-many relationships.   
+1. First you need to supply a primary ky of each model
+2. Then you need to define one foreign key which refers to the Primary Ky of the other model.
+3. then you can define a relationship with a backref that allows direct access to the related model. (但是现在还不确定这个relation要定义在哪个Model里面，目前我觉得定义在任何一个里面都行)
+```python
+class Person(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    addresses = db.relationship('Address', backref='person', lazy=True)
+
+class Address(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), nullable=False)
+    person_id = db.Column(db.Integer, db.ForeignKey('person.id'),
+        nullable=False)
+```
+### relationship & backref
+通过上面的 `db.relationship()`, `Person`有了一个可以访问的`addresses` -> `person1.addresses`。 它返回的可能是一个query，需要做`person1.addresses.all()`. 也可能是一个object, (这取决于`lazy`的设定，下面会讲)   
+
+似乎明白了了一下foreign key 和 relationship的区别： foreign key是要 `addresss1.person_id`. 只能单向并且只能访问 `id`.   
+而relationship 可以双向，可以直接返回objects，可以返回query。
+
+### lazy
+https://docs.sqlalchemy.org/en/13/orm/relationship_api.html#sqlalchemy.orm.relationship.params.lazy   
+True - a synonym for ‘select’  
+False - a synonym for ‘joined’   
+None - a synonym for ‘noload’   
+还有经常用的事dynamic，返回一个 Query object。
