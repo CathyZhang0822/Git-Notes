@@ -57,3 +57,24 @@ True - a synonym for ‘select’
 False - a synonym for ‘joined’   
 None - a synonym for ‘noload’   
 还有经常用的事dynamic，返回一个 Query object。
+
+## One-to-One
+one-to-one 和 one-to-many很像，只需要加一个限制：`uselist=False`
+
+## Many-to-Many
+If you want to use many-to-many relationships you will need to define a helper table that is used for the relationship. For this helper table it is strongly recommended to not use a model but an actual table: 
+```
+tags = db.Table('tags',
+    db.Column('tag_id', db.Integer, db.ForeignKey('tag.id'), primary_key=True),
+    db.Column('page_id', db.Integer, db.ForeignKey('page.id'), primary_key=True)
+)
+
+class Page(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    tags = db.relationship('Tag', secondary=tags, lazy='subquery',
+        backref=db.backref('pages', lazy=True))
+
+class Tag(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+```
+需要额外的一个table!
