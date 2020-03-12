@@ -78,3 +78,17 @@ class Tag(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 ```
 需要额外的一个table!
+
+## Lazy loading vs Eager loading
+https://stackoverflow.com/questions/31366236/lazy-loading-vs-eager-loading   
+**When to use eager loading** 
+
+In "one side" of one-to-many relations that you sure are used every where with main entity. like User property of an Article. Category property of a Product.   
+Generally When relations are not too much and eager loading will be good practice to reduce further queries on server.
+
+**When to use lazy loading**
+
+Almost on every "collection side" of one-to-many relations. like Articles of User or Products of a Category
+You exactly know that you will not need a property instantly.   
+Note: like Transcendent said there may be disposal problem with lazy loading.
+
