@@ -16,7 +16,7 @@
 | 10 | [一些有用的命令](./notes/commands.md)|1. 在bash，查看和set environment variables|
 | | **Python, framework, 以及相关数据库** | |
 | 1 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
-| 2 | [Flask db](./notes/db.md)| 1.Flask db migration相关命令 2.一些常用commands的使用和理解|
+| 2 | [Flask db](./notes/db.md)| 1.Flask db migration相关命令 <br> 2.一些常用commands的使用和理解 <br> 3. Entity Relationship| 
 | 3 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
 | 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
 | 5 | [Heroku Setup](./notes/herokuapp.md)| 1. 常见的heroku commands <br> 2.Heroku app setup step by step|
