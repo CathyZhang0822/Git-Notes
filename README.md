@@ -33,4 +33,4 @@
 | 4 | [Comments](./notes/comments.md)|1.Don’t Use a Comment When You Can Use a Function or a Variable <br> 2. Some comments are necessary or beneficial. |
 | | **Docker** | |
 | 1 | [Makefile](./notes/makefile.md)| 1. `.PHONY` 是什么 |
-| 2 | [Docker compose file]|(./notes/docker_compose.md)| 1. `docker-compose run` <br> 2. `docker-compose build` |
+| 2 | [Docker compose file](./notes/docker_compose.md)| 1. `docker-compose run` <br> 2. `docker-compose build` |
