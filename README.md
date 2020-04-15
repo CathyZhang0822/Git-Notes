@@ -34,3 +34,5 @@
 | | **Docker** | |
 | 1 | [Makefile](./notes/makefile.md)| 1. `.PHONY` 是什么 |
 | 2 | [Docker compose file](./notes/docker_compose.md)| 1. `docker-compose run` <br> 2. `docker-compose build` |
+| | **Other Notes** | |
+| 1 | [MySQL show status](./notes/show_status.md)|How to show open database connections |
