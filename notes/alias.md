@@ -8,3 +8,5 @@ Basically you just need to add lines to ~/.gitconfig
 Or you can use the git config alias command:    
 
 `$ git config --global alias.st status `
+Use single quote:   
+`$ git config --global alias.ci 'commit -v'`
