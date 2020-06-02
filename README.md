@@ -41,3 +41,4 @@
 | | **Other Notes** | |
 | 1 | [MySQL show status](./notes/show_status.md)|How to show open database connections |
 | 2 | [Gevent](./notes/gevent.md)|1.gevent.threadpool 2. gevent.pool.Pool |
+| 3 | [Get an object's attributes](./notes/dir.md)|1. use `dir()`|
