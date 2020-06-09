@@ -32,6 +32,9 @@
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
 | 3 | [Functions](./notes/functions.md)|1. Do one thing. 2. Same level of abstractions 3. Dry 4.arguments |
 | 4 | [Comments](./notes/comments.md)|1.Don’t Use a Comment When You Can Use a Function or a Variable <br> 2. Some comments are necessary or beneficial. |
+| | **Computer Networds**| |
+| 1 | [Packet Switching](./notes/packet_switching.md)|1. 简单介绍 |
+| 2 | [IP](./notes/ip.md)|1. IP是什么 |
 | | **Docker** | |
 | 1 | [Makefile](./notes/makefile.md)| 1. `.PHONY` 是什么 |
 | 2 | [Docker compose file](./notes/docker_compose.md)| 1. `docker-compose run` <br> 2. `docker-compose build` |
