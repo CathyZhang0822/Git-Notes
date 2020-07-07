@@ -27,6 +27,7 @@
 | 3 | [Images](./notes/images.md) | 1. 前端如何serve pictures？|
 | 4 | [Class vs ID](./notes/class_and_id.md) | HTML中 class和ID 区别|
 | 5 | [jQuery](./notes/jquery.md)| 1.DOM Traversal and Manipulation <br> 2.Event Handling <br> 3.Ajax |
+| 6 | [Bind](./notes/react.md)| 1. this指向 2. bind()函数 |
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
