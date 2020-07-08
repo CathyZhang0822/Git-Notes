@@ -52,7 +52,7 @@ This `Query` type defines three available queries for clients to execute: `launc
 所以这个query type 和 object type 有啥区别?
 1. query 支持传入argument
 2. query（前者）是用来fetch object（后者）的？
-## The `Mutation` type
+## 第三种 The `Mutation` type
 **Queries enable clients to fetch data, but not to modify data**. To enable clients to modify data, our schema needs to define some `mutations`.
 ```js
 type Mutation {
