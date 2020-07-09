@@ -31,6 +31,7 @@
 | 7 | [Next JS](./notes/nextjs.md)|1. Pages 2. Routing 3. `next/router` 主要是了解dynamic routing | 
 | 8 | [Hook](./notes/hook.md)|1. 经常看到的`useState` |
 | 9 | [Graphql Schema](./notes/graphql.md)|1. Object Types 2. The `Query` type 3. The `Mutation` type |
+| 10 | [Graphql - Connect to data source](./notes/datasource.md)|1. 通过REST API 2. 通过Database |
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
