@@ -48,7 +48,7 @@ This `Query` type defines three available queries for clients to execute: `launc
 
 - The `launches` query will return an array of all upcoming Launches.
 - The `launch` query will return a single Launch that corresponds to the **`id` argument provided to the query**.
-- The `me` query will return details for the User that's currently logged in.
+- The `me` query will return details for the User that's currently logged in.   
 所以这个query type 和 object type 有啥区别?
 1. query 支持传入argument
 2. query（前者）是用来fetch object（后者）的？
