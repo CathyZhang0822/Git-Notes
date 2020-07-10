@@ -67,4 +67,25 @@ type TripUpdateResponse {
 }
 ```
 This Mutation type defines three available mutations for clients to execute: `bookTrips`, `cancelTrip`, and `login`.
-可以把mutations理解成functions吗？定义了take in和return的type.
+可以把mutations理解成functions吗？（update: 不可以，更像是只有首尾的function。去除掉了中间的逻辑。[因为中间的逻辑由resolver来写]）定义了take in和return的type.
+# 深入理解 Query Type 和 Mutation Type
+我乍一看它们两个觉得很像，都像是只有首尾的function,规定了输入和输出的type。
+这里又涉及一个新的概念`Query`，GraphQL中使用`Query`来抽象数据的查询逻辑，当前标准下，有三种查询类型，分别是`query`（查询）、`mutation`（更改）和`subscription`（订阅）。   
+- query（查询）：当获取数据时，应当选取Query类型
+- mutation（更改）：当尝试修改数据时，应当使用mutation类型
+ - subscription（订阅）：当希望数据更改时，可以进行消息推送，使用subscription类型
+ 发个对比：   
+ ```
+ query {
+  articles(): [Article!]!
+  article(id: Int): Article!
+}
+
+mutation {
+  createArticle(): Article!
+  updateArticle(id: Int): Article!
+  deleteArticle(id: Int): Article!
+}
+
+```
+我们可以看到mutation里面的fields都是动词。   
