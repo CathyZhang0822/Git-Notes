@@ -27,3 +27,32 @@ Query: {
   me: (_, __, { dataSources }) => dataSources.userAPI.findOrCreateUser()
 }
 ```
+
+**注意分清以上的 `Query` 和 graphql UI里输入的query的区别！！**   
+`Query`是我们在schema里面定义的一个 `Query Type`
+我在graphql UI里面输入一个query:   
+```
+query GetLaunchById {
+  launch(id: 60) { # 注意这里的launch，是我们定义Query Type里面的一个field!!!!!!!  下面的data，就是这个field对应的resolver 来fetch的  
+    id
+    rocket {
+      id
+      type
+    }
+  }
+}# Write your query or mutation here
+```
+得到：   
+```
+{
+  "data": {
+    "launch": {
+      "id": "60",
+      "rocket": {
+        "id": "falcon9",
+        "type": "FT"
+      }
+    }
+  }
+}
+```
