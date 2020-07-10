@@ -17,7 +17,7 @@ type Query {
   me: User
 }
 ```
-对应的resolver:   
+对应的resolver: （**我觉得就可以把resolver理解成 `KEY_FUNCTION_MAP`!**）(定义的 `Query Type`可以理解为`KEY_RETURN-TYPE_MAP`)
 ```js
 Query: {
   launches: (_, __, { dataSources }) =>
