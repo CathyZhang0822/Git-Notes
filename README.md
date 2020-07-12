@@ -33,6 +33,7 @@
 | 9 | [Graphql Schema](./notes/graphql.md)|1. Object Types 2. The `Query` type 3. The `Mutation` type |
 | 10 | [Graphql - Connect to data source](./notes/datasource.md)|1. 通过REST API 2. 通过Database |
 | 11 | [Graphql - Query Resolvers](./notes/resolver.md)|1. 理解！是一个function, 对应的key 是object/query type里面的一个field|
+| 12 | [Graphql - Client Side](./notes/graphql_client.md)|1. 理解 server, client |
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
