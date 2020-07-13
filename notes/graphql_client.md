@@ -13,6 +13,37 @@ To generate TypeScript types for your queries and mutations, open another termin
 
 In this section, we'll learn how to use the `useQuery` hook from `@apollo/react-hooks` to fetch more complex queries and execute features like pagination.   
 To create a component with `useQuery`, `import useQuery from @apollo/react-hooks`, pass your query wrapped with `gql` in as the first parameter, then wire your component up to use the loading, data, and error properties on the result object to render UI in your app.    
+例子，首先写一个gql query:
+```tsx
+export const GET_LAUNCH_DETAILS = gql`
+  query LaunchDetails($launchId: ID!) {
+    launch(id: $launchId) {
+      id
+      site
+      isBooked
+      rocket {
+        id
+        name
+        type
+      }
+      mission {
+        name
+        missionPatch
+      }
+    }
+  }
+`;
+```
+再完善Launch函数：   
+```tsx
+export default function Launch({ launchId }) {
+  const { data, loading, error } = useQuery(
+    GET_LAUNCH_DETAILS,
+    { variables: { launchId } }
+  );
+  if (loading) return <Loading />;
+  if (error) return <p>ERROR: {error.message}</p>;
+```
 
 
 ## Using fragments to share code
