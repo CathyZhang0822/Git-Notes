@@ -8,7 +8,7 @@ https://www.apollographql.com/docs/tutorial/queries/
 获得data之后，client再把它们render出来
 
 *那些auto generated files:   
-To generate TypeScript types for your queries and mutations, open another terminal window and run `npm run codegen`. This will watch for changes to your code and generate the client-side typings.*
+To generate TypeScript types for your queries and mutations, open another terminal window and run `npm run codegen`. This will watch for changes to your code and generate the client-side typings.* （关于codegen，会专门写一篇Note）
 
 ## The useQuery hook
 
