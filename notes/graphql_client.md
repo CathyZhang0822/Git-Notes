@@ -1,4 +1,5 @@
 # Hook up your graph to Apollo Client
+https://www.apollographql.com/docs/tutorial/queries/
 
 ## Apollo Client
 
@@ -6,8 +7,8 @@
 创建一个Apollo Client, 然后这个client 来 send GraphQL queries to Apollo Server (server就是教程上半部分讲的那个，我们写了很多 types 和 resolvers)。   
 获得data之后，client再把它们render出来
 
-那些auto generated files:   
-To generate TypeScript types for your queries and mutations, open another terminal window and run `npm run codegen`. This will watch for changes to your code and generate the client-side typings.
+*那些auto generated files:   
+To generate TypeScript types for your queries and mutations, open another terminal window and run `npm run codegen`. This will watch for changes to your code and generate the client-side typings.*
 
 ## The useQuery hook
 
