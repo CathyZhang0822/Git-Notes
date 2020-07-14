@@ -6,9 +6,9 @@ A store is not a class. It's just an object with a few methods on it. To create 
 需要着重理解的几个概念：   
 1. Redux Store 本身
 2. Reducer functions
-3. Dispatch action
+3. store.dispatch 和 Dispatch Functions之间的区别
 
-### createStore()
+## createStore()
 https://redux.js.org/api/createstore
 Creates a Redux store that holds the complete state tree of your app. **There should only be a single store in your app.**    
    
@@ -42,4 +42,14 @@ store.dispatch({
 console.log(store.getState())
 // [ 'Use Redux', 'Read the docs' ]
 ```
+## Reducer
+https://redux.js.org/glossary#reducer
+`type Reducer<S, A> = (state: S, action: A) => S`
+A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value.    
+Reducers 不是redux里面特有的，它是一个基础概念。    
+In Redux, the accumulated value is the state object, and the values being accumulated are actions.
 
+## store.dispatch vs Dispatch Functions
+store.dispatch 用来dispatch an action. 这是改变store state的唯一方式。    
+
+dispatch functions: https://redux.js.org/glossary#dispatching-function   没懂
