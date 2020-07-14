@@ -35,6 +35,7 @@
 | 11 | [Graphql - Query Resolvers](./notes/resolver.md)|1. 理解！是一个function, 对应的key 是object/query type里面的一个field|
 | 12 | [Graphql - Client Side](./notes/graphql_client.md)|1. 理解 server, client 2. useQuery, useMutation hook 3. Fragment|
 | 13 | [Graphql - Code Gen](./notes/codegen.md)| To generate TypeScript types for your queries and mutations |
+| 14 | [Redux](./notes/redux.md)|1. Redux Store|
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
