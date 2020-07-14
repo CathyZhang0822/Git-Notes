@@ -1,7 +1,7 @@
 # Store
-https://redux.js.org/api/store
-A store holds the whole state tree of your application. The only way to change the state inside it is to dispatch an action on it.   
-A store is not a class. It's just an object with a few methods on it. To create it, pass your *root reducing function* to *createStore()*.    
+https://redux.js.org/api/store   
+**A store holds the whole state tree of your application. The only way to change the state inside it is to dispatch an action on it.**   
+A store is not a class. It's just an object with a few methods on it. To create it, pass your **root reducing function** to **createStore()**.    
    
 需要着重理解的几个概念：   
 1. Redux Store 本身
