@@ -29,13 +29,13 @@
 | 5 | [jQuery](./notes/jquery.md)| 1.DOM Traversal and Manipulation <br> 2.Event Handling <br> 3.Ajax |
 | 6 | [Bind](./notes/react.md)| 1. this指向 2. bind()函数 |
 | 7 | [Next JS](./notes/nextjs.md)|1. Pages 2. Routing 3. `next/router` 主要是了解dynamic routing | 
-| 8 | [Hook](./notes/hook.md)|1. 经常看到的`useState` |
+| 8 | [Hook](./notes/hook.md)|1. 经常看到的`useState` 2. `useSelector` 3. `useDispatch` |
 | 9 | [Graphql Schema](./notes/graphql.md)|1. Object Types 2. The `Query` type 3. The `Mutation` type |
 | 10 | [Graphql - Connect to data source](./notes/datasource.md)|1. 通过REST API 2. 通过Database |
 | 11 | [Graphql - Query Resolvers](./notes/resolver.md)|1. 理解！是一个function, 对应的key 是object/query type里面的一个field|
 | 12 | [Graphql - Client Side](./notes/graphql_client.md)|1. 理解 server, client 2. useQuery, useMutation hook 3. Fragment|
 | 13 | [Graphql - Code Gen](./notes/codegen.md)| To generate TypeScript types for your queries and mutations |
-| 14 | [Redux](./notes/redux.md)|1. Redux Store 2. R|
+| 14 | [Redux](./notes/redux.md)|1. Redux Store 2. Reducer functions 3. Dispatch functions|
 | | **Clean Code**| |
 | 1 | 导语 | 略过 |
 | 2 | [Meaningful names](./notes/meaningful_names.md)|1. name要尽量clear，避免歧义 <br> 2.class最好是名词，method最好是动词 |
