@@ -15,7 +15,7 @@
 | 9 | [把local连接到github和heroku](./notes/heroku.md)| 创建remotes, 链接remotes|
 | 10 | [一些有用的命令](./notes/commands.md)|1. 在bash，查看和set environment variables|
 | 11 | [Set alias](./notes/alias.md)| 1.设置alias,如 `gst` |
-| 12 | [arc 命令]|(./notes/arc.md)|1. update 一个revision 2. land 一个revison |
+| 12 | [arc 命令](./notes/arc.md)|1. update 一个revision 2. land 一个revison |
 | | **Python, framework, 以及相关数据库** | |
 | 1 | [Connect Postgres server to Flask](./notes/postgres.md)| 在Flask里面使用PostgresSQL  |
 | 2 | [Flask db](./notes/db.md)| 1.Flask db migration相关命令 <br> 2.一些常用commands的使用和理解 <br> 3. Entity Relationship| 
