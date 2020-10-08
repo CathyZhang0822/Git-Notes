@@ -30,7 +30,7 @@
 | 5 | [jQuery](./notes/jquery.md)| 1.DOM Traversal and Manipulation <br> 2.Event Handling <br> 3.Ajax |
 | 6 | [Bind](./notes/react.md)| 1. this指向 2. bind()函数 |
 | 7 | [Next JS](./notes/nextjs.md)|1. Pages 2. Routing 3. `next/router` 主要是了解dynamic routing | 
-| 8 | [Hook](./notes/hook.md)|1. 经常看到的`useState` 2. `useSelector` 3. `useDispatch` |
+| 8 | [Hook](./notes/hook.md)|1. 经常看到的`useState` 2. `useSelector` 3. `useDispatch` 4. `useMemo`|
 | 9 | [Graphql Schema](./notes/graphql.md)|1. Object Types 2. The `Query` type 3. The `Mutation` type |
 | 10 | [Graphql - Connect to data source](./notes/datasource.md)|1. 通过REST API 2. 通过Database |
 | 11 | [Graphql - Query Resolvers](./notes/resolver.md)|1. 理解！是一个function, 对应的key 是object/query type里面的一个field|
