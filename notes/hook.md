@@ -47,3 +47,10 @@ const dispatch = useDispatch()
 ```
 This hook returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.    
 就是那个 `store.dispatch()`    
+
+# useMemo()
+```
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+```
+Returns a memoized value.   
+Pass a “create” function and an array of dependencies. `useMemo` will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render.   
