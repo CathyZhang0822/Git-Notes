@@ -38,6 +38,8 @@
 | 13 | [Graphql - Code Gen](./notes/codegen.md)| To generate TypeScript types for your queries and mutations |
 | 14 | [Redux](./notes/redux.md)|1. Redux Store 2. Reducer functions 3. Dispatch functions|
 | 15 | [Typescript - Interface vs Type](./notes/interface.md)|1. Interfaces are restricted to an object type 2. You can merge interfaces but not types|
+| | **React** | |
+| 1 | [React - Component](./notes/component.md) |`React.Componenet`|
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
