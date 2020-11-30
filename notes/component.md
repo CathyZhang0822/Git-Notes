@@ -93,7 +93,7 @@ There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-m
     componentDidUpdate(prevProps, prevState, snapshot)
     ```
     This is also a good place to do network requests as long as you compare the current props to previous props. (eg. a network request may not be neccesaary if the propss has not changed)   
-    ```javacript
+    ```javascript
     componentDidUpdate(prevProps) {
       // Typical usage (don't forget to compare props):
       if (this.props.userID !== prevProps.userID) {
