@@ -28,6 +28,7 @@ The only method you must define in a `React.Component` subclass is called `rende
 ## Props are Read-Only
 Whether you declare a component as a function or a class, it must never modify its own props.   
 All React components must act like pure functions with respect to their props.   
+可以把props理解成
 
 # State and Lifecycle
 
@@ -54,3 +55,28 @@ class Clock extends React.Component {
 There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/   
 
 补充常用lifecycle methods: https://reactjs.org/docs/react-component.html#constructor ...
+
+  ### Mounting
+  These methods are called in the following order when an instance of a componenet is being created and inserted into the DOM:   
+  * **constructor()**
+  * static getDerivedStateFromProps()
+  * **render()**
+  * **componentDidMount()**
+
+    #### constructor()
+    ```
+    contructor(props)
+    ```
+    **If you don't initialize state and you don't bind methods, you don't need to implement a constructor for your React component.**   
+    ```
+    constructor(props) {
+      super(props);
+      // Don't call this.setState() here!
+      this.state = { counter: 0 };
+      this.handleClick = this.handleClick.bind(this);
+    }
+    ```
+    #### componentDidMount()
+    `componentDidMount()` is invoked immediately after a component is mounted **(inserted into the tree).**    
+    If you need to load data from a remote endpoint, this is a good plance to instantiate the network request.
+    This method is a good place to setup any subscription. If you do that, don't forget to unsubscrite in `componentWillUnmount()`.   
