@@ -39,7 +39,8 @@
 | 14 | [Redux](./notes/redux.md)|1. Redux Store 2. Reducer functions 3. Dispatch functions|
 | 15 | [Typescript - Interface vs Type](./notes/interface.md)|1. Interfaces are restricted to an object type 2. You can merge interfaces but not types|
 | | **React** | |
-| 1 | [React - Component](./notes/component.md) |`React.Componenet`|
+| 1 | [React - Component](./notes/component.md) |1. `React.Componenet` 有两种 function / class 2. Props & State 3. Life cycle|
+| 2 | [Promise](./notes/promise.md)| 感觉是把一个async function包装成 sync-like|
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
