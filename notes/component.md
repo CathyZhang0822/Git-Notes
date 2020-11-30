@@ -33,7 +33,7 @@ All React components must act like pure functions with respect to their props.
 # State and Lifecycle
 
 ## Adding local state to a Class
-```
+```javascript
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +53,7 @@ class Clock extends React.Component {
 
 ## Lifecycle
 There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/   
-
+![lifecycle](https://user-images.githubusercontent.com/36396754/100670138-4f22ad80-3313-11eb-8786-681cdf7d6ac7.png)
 补充常用lifecycle methods: https://reactjs.org/docs/react-component.html#constructor ...
 
   ### Mounting
@@ -68,7 +68,7 @@ There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-m
     contructor(props)
     ```
     **If you don't initialize state and you don't bind methods, you don't need to implement a constructor for your React component.**   
-    ```
+    ```javascript
     constructor(props) {
       super(props);
       // Don't call this.setState() here!
@@ -89,11 +89,11 @@ There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-m
   * getSnapshotBeforeUpdate()
   * **componentDidUpdate()**
     #### componentDidUpdate()
-    ```
+    ```javascript
     componentDidUpdate(prevProps, prevState, snapshot)
     ```
     This is also a good place to do network requests as long as you compare the current props to previous props. (eg. a network request may not be neccesaary if the propss has not changed)   
-    ```
+    ```javacript
     componentDidUpdate(prevProps) {
       // Typical usage (don't forget to compare props):
       if (this.props.userID !== prevProps.userID) {
