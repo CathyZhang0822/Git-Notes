@@ -102,6 +102,6 @@ There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-m
     }
     ```
   ### Unmounting
-  This method is called when a component is being removed from the DOM. 
-    #### componentWillUnmount()
-    `compenentWillUnmount` is invoked immediately before a component is unmounted and . Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in `componentDidMount`
+  This method is called when a component is being removed from the DOM.    
+   #### componentWillUnmount()
+   `compenentWillUnmount` is invoked immediately before a component is unmounted and . Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in `componentDidMount`
