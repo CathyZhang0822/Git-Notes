@@ -79,4 +79,29 @@ There is a lifecycle cheatsheet: https://projects.wojtekmaj.pl/react-lifecycle-m
     #### componentDidMount()
     `componentDidMount()` is invoked immediately after a component is mounted **(inserted into the tree).**    
     If you need to load data from a remote endpoint, this is a good plance to instantiate the network request.
-    This method is a good place to setup any subscription. If you do that, don't forget to unsubscrite in `componentWillUnmount()`.   
+    This method is a good place to setup any subscription. If you do that, don't forget to unsubscrite in `componentWillUnmount()`.    
+    
+  ### Updating
+  An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:   
+  * static getDerivedStateFromProps()
+  * shouldComponentUpdate()
+  * **render()**
+  * getSnapshotBeforeUpdate()
+  * **componentDidUpdate()**
+    #### componentDidUpdate()
+    ```
+    componentDidUpdate(prevProps, prevState, snapshot)
+    ```
+    This is also a good place to do network requests as long as you compare the current props to previous props. (eg. a network request may not be neccesaary if the propss has not changed)   
+    ```
+    componentDidUpdate(prevProps) {
+      // Typical usage (don't forget to compare props):
+      if (this.props.userID !== prevProps.userID) {
+        this.fetchData(this.props.userID);
+      }
+    }
+    ```
+  ### Unmounting
+  This method is called when a component is being removed from the DOM. 
+    #### componentWillUnmount()
+    `compenentWillUnmount` is invoked immediately before a component is unmounted and . Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in `componentDidMount`
