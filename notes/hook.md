@@ -1,3 +1,20 @@
+# Hooks and Function Components
+**Hooks 不能用在classes里面！！！**
+As a reminder, function components look like this:   
+```javascript
+const Exampole = (props) => {
+  // You can use Hooks here!
+  return <div />;
+}
+```
+
+or this:   
+```javascript
+function Example(props) {
+  // You can use Hooks here!
+  return <div />;
+}
+```
 # useState()
 官方文档：https://reactjs.org/docs/hooks-state.html   
 一个example:
