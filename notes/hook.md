@@ -70,4 +70,17 @@ This hook returns a reference to the dispatch function from the Redux store. You
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 ```
 Returns a memoized value.   
-Pass a “create” function and an array of dependencies. `useMemo` will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render.   
+Pass a “create” function and an array of dependencies. `useMemo` will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render. 
+
+# useCallback
+```javascript
+const memoizedCallback = useCallback(
+  () => {
+    doSomething(a, b);
+  },
+  [a, b],
+);
+```
+Returns a memorized callback.   
+Pass an inline callback and an array of dependencies. `useCallback` will return a meomoized version of the callback that only changes if one of the dependecies has changed.    
+`useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`.   
