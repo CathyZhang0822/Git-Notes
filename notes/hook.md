@@ -15,6 +15,7 @@ function Example(props) {
   return <div />;
 }
 ```
+**所以只能存在于function components里面！！ 但是注意function components不存在生命周期！！！！**
 # useState()
 官方文档：https://reactjs.org/docs/hooks-state.html   
 一个example:
