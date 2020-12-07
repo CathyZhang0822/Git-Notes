@@ -14,10 +14,10 @@ Creates a Redux store that holds the complete state tree of your app. **There sh
    
 **Arguments:**  
 就pass三个东西：
-1. Reducer（就是reducing functions），用来改变state和 return next state tree. 注意！即使我们说是 “state tree”，但是 `state`可以是any type!! 比如array   
+1. Reducer（就是reducing functions），用来改变state（store.dispatch(...)就是运行这个reducing function!）和 return next state tree. 注意！即使我们说是 “state tree”，但是 `state`可以是any type!! 比如array   
 2. The initial state.
 3. The store enhancer. 跟middleware...之类的有关    
-以下是官网英文解释：   
+#### 以下是官网英文解释：   
 1. Reducer (Function): A reducing function that returns the next state tree, given the current state tree and an action to handle.   
 2. [perloadedState] (any): The initial state. 
 3. [enhancer] (Function): The store enhancer. You may optionally specify it to enhance the store with third-party capabilities such as middleware, time travel, persistence, etc. The only store enhancer that ships with Redux is `applyMiddleware()` (这个好像在哪里看到过).
@@ -47,12 +47,25 @@ store.dispatch({
 console.log(store.getState())
 // [ 'Use Redux', 'Read the docs' ]
 ```
-## Reducer
-https://redux.js.org/glossary#reducer
+### Reducer    
+这里详细解释下上面说的reducer (reducing function)
+https://redux.js.org/glossary#reducer   
 `type Reducer<S, A> = (state: S, action: A) => S`
 A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value.    
 Reducers 不是redux里面特有的，它是一个基础概念。    
 In Redux, the accumulated value is the state object, and the values being accumulated are actions.
+例子：    
+就是上面介绍 `createStore` 里的   
+```
+function todos(state = [], action) {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return state.concat([action.text])
+    default:
+      return state
+  }
+}
+```
 
 ## store.dispatch vs Dispatch Functions
 store.dispatch 用来dispatch an action. 这是改变store state的唯一方式。    
