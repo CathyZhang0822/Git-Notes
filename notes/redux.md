@@ -80,4 +80,27 @@ Returns the current state tree of your application. It's equal to the last value
 
 ## dispatch(action)   
 Dispatches an action. This is the only way to trigger a state change.   
-注意！这里总结
+注意！这里总结两种用法。一种是直接传入action arg,这种情况直接call store自己本身的dispatching functions。还有一只是传入别的dispatching functions。例子：   
+```
+import { createStore } from 'redux'
+const store = createStore(todos, ["Use Redux"]);
+
+//第一种
+store.dispatch({
+ type: "ADD_TODO",
+ text: "Read the docs1"
+});
+
+function addTodo(text) {
+ return {
+   type: "ADD_TODO",
+   text
+ };
+}
+
+//第二种
+store.dispatch(addTodo("Read the docs"));
+store.dispatch(addTodo("Read about the middleware"));
+// ["Use Redux", "Read the docs1", "Read the docs", "Read about the middleware"]
+console.log(store.getState());
+```
