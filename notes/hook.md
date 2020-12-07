@@ -43,6 +43,7 @@ It returns a pair of values: **the current state** and **a function that updates
 **The only argument to the `useState()` Hook is the initial state.** Unlike with classes, the state doesn’t have to be an object. We can keep a number or a string if that’s all we need. In our example, we just want a number for how many times the user clicked, so pass 0 as initial state for our variable. (If we wanted to store two different values in state, we would call useState() twice.)
 
 # useSelector()    
+在学习这条之前你需要了解reduxe store和它相关的dispatching functions!
 ```js
 const result : any = useSelector(selector : Function, equalityFn? : Function)
 ```
@@ -64,7 +65,8 @@ export const CounterComponent = () => {
 const dispatch = useDispatch()
 ```
 This hook returns a reference to the dispatch function from the Redux store. You may use it to dispatch actions as needed.    
-就是那个 `store.dispatch()`    
+就是那个 `store.dispatch()`  
+就是store它自己的那个basic dispatch function,可以拿过来用，来改变state？   
 
 # useMemo()
 ```
