@@ -71,4 +71,13 @@ function todos(state = [], action) {
 ## store.dispatch vs Dispatch Functions
 store.dispatch 用来dispatch an action. 这是改变store state的唯一方式。    
 
-dispatch functions: https://redux.js.org/glossary#dispatching-function   没懂
+dispatch functions: https://redux.js.org/glossary#dispatching-function   没懂   
+
+# Store Methods
+## getStage()
+Returns the current state tree of your application. It's equal to the last value returned by the store's reducer.   
+顾名思义，就是return最新的state。也就是reducer 返回的最后一个value.
+
+## dispatch(action)   
+Dispatches an action. This is the only way to trigger a state change.   
+注意！这里总结
