@@ -6,7 +6,8 @@ A store is not a class. It's just an object with a few methods on it. To create 
 需要着重理解的几个概念：   
 1. Redux Store 本身
 2. Reducer functions
-3. store.dispatch 和 Dispatch Functions之间的区别
+3. store.dispatch 和 Dispatch Functions之间的区别   
+（注意这里！！！ 每个reduxe store都有一个base dispatch functions! 在`createStore`的时候就定义好了。除此之外，还有广泛意义上的`dispatching functions`。）
 
 ## createStore()
 https://redux.js.org/api/createstore
@@ -14,11 +15,11 @@ Creates a Redux store that holds the complete state tree of your app. **There sh
    
 **Arguments:**  
 就pass三个东西：
-1. Reducer（就是reducing functions），用来改变state（store.dispatch(...)就是运行这个reducing function!）和 return next state tree. 注意！即使我们说是 “state tree”，但是 `state`可以是any type!! 比如array   
+1. Reducer（就是reducing function），用来改变state（store.dispatch(...)就是运行这个reducing function!）和 return next state tree. 注意！即使我们说是 “state tree”，但是 `state`可以是any type!! 比如array   
 2. The initial state.
 3. The store enhancer. 跟middleware...之类的有关    
 #### 以下是官网英文解释：   
-1. Reducer (Function): A reducing function that returns the next state tree, given the current state tree and an action to handle.   
+1. Reducer (Function): A reducing function that returns the next state tree, given the current state tree and an action to handle.（可以理解store本身的reducer就是我们说的那个base reducing function吗）   
 2. [perloadedState] (any): The initial state. 
 3. [enhancer] (Function): The store enhancer. You may optionally specify it to enhance the store with third-party capabilities such as middleware, time travel, persistence, etc. The only store enhancer that ships with Redux is `applyMiddleware()` (这个好像在哪里看到过).
 
