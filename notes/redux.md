@@ -13,6 +13,11 @@ https://redux.js.org/api/createstore
 Creates a Redux store that holds the complete state tree of your app. **There should only be a single store in your app.**    
    
 **Arguments:**  
+就pass三个东西：
+1. Reducer（就是reducing functions），用来改变state和 return next state tree. 注意！即使我们说是 “state tree”，但是 `state`可以是any type!! 比如array   
+2. The initial state.
+3. The store enhancer. 跟middleware...之类的有关    
+以下是官网英文解释：   
 1. Reducer (Function): A reducing function that returns the next state tree, given the current state tree and an action to handle.   
 2. [perloadedState] (any): The initial state. 
 3. [enhancer] (Function): The store enhancer. You may optionally specify it to enhance the store with third-party capabilities such as middleware, time travel, persistence, etc. The only store enhancer that ships with Redux is `applyMiddleware()` (这个好像在哪里看到过).
