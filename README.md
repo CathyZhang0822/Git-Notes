@@ -57,6 +57,8 @@
 | 3 | [Run a bash](./notes/docker_bash.md)|1. Use a container ID 2. Use an image ID |
 | | **Linux Commands**| |
 | 1 | [Cat](./notes/cat.md)| cat vs vim, cat是如何读写files的|
+| | **Rego** | |
+| 1 | [Rego](./notes/rego.md) | Policy Language |
 | | **Other Notes** | |
 | 1 | [MySQL show status](./notes/show_status.md)|How to show open database connections |
 | 2 | [Gevent](./notes/gevent.md)|1.gevent.threadpool 2. gevent.pool.Pool |
