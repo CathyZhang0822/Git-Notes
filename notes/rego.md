@@ -1,5 +1,7 @@
 # Rego 
-https://www.openpolicyagent.org/docs/latest/policy-language/#why-use-rego
+https://www.openpolicyagent.org/docs/latest/policy-language/#why-use-rego   
+OPA: Open Policy Agent   
+Rego是OPA的native query language   
 
 
 ## Scalar Vlues
@@ -79,15 +81,22 @@ In addition to arrays and objects, Rego supports set values. Sets are unordered 
 ```rego
 s := {cube.width, cube.height, cube.depth}
 ```
-+---------+
-|    s    |
-+---------+
-| [5,4,3] |
-+---------+
-```
 ```rego
 {1,2,3} == {3,1,2}
 ```
 ```
 true
 ```
+## Variables ???看不懂doc
+
+
+
+
+
+
+
+
+
+
+
+
