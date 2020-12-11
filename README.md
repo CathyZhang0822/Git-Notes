@@ -58,7 +58,7 @@
 | | **Linux Commands**| |
 | 1 | [Cat](./notes/cat.md)| cat vs vim, cat是如何读写files的|
 | | **Open Policy Agent** | |
-| 1 | [OPA](./notes/opq.md) | 简单介绍OPA 基本概念，1. OPA 怎么用 2. Rego 3. Running OPA|
+| 1 | [OPA](./notes/opa.md) | 简单介绍OPA 基本概念，1. OPA 怎么用 2. Rego 3. Running OPA|
 | 2 | [Rego](./notes/rego.md) | Policy Language |
 | | **Other Notes** | |
 | 1 | [MySQL show status](./notes/show_status.md)|How to show open database connections |
