@@ -11,6 +11,7 @@ OPA可以做而且不限于以下decisions：
 - Which times of day the system can be accessed at.
 
 ## Example
+![example](https://user-images.githubusercontent.com/36396754/102041966-92563500-3d85-11eb-9d34-7996913187e7.png)
 
 There are 3 kinds of components in the system:
 - Servers expose zero or more protocols (e.g., http, ssh, etc.)
