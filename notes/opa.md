@@ -79,6 +79,17 @@ any_public_networks = true {  # is true if...
     net.public                # it is public.
 }
 ```
+可以省略 `= true`    
+If you omit the = <value> part of the rule head the value defaults to true. You could rewrite the example above as follows without changing the meaning:        
+
+```rego
+package example.rules
+
+any_public_networks {
+    net := input.networks[_]
+    net.public
+}
+```
 ```rego
 any_public_networks
 ```
