@@ -16,9 +16,9 @@ OPA可以做而且不限于以下decisions：
 There are 3 kinds of components in the system:
 - Servers expose zero or more protocols (e.g., http, ssh, etc.)
 - Networks connect servers and can be public or private. Public networks are connected to the Internet.
-- Ports attach servers to networks.
+- Ports attach servers to networks.    
 All of the servers, networks, and ports are provisioned by a script. The script receives a JSON representation of the system as input:    
-理解：这就是services
+理解：这就是services send给OPA的东西？
 ```
 {
     "servers": [
@@ -41,3 +41,15 @@ All of the servers, networks, and ports are provisioned by a script. The script 
     ]
 }
 ```
+## Rego
+OPA policies are expressed in a language callded Rego.   
+When OPA evaluates policies it binds data provided in the query to a global variable called `input`.    
+```rego
+input.servers[0].protocols[0]
+```
+```bash
+"https"
+```
+### Rego 的一些常见语法
+#### Expressions 
+同样也是用 `==`，但是似乎return的东西是 `true` 或者 `undefined`
