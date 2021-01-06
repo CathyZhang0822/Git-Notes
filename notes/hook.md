@@ -86,4 +86,32 @@ const memoizedCallback = useCallback(
 ```
 Returns a memorized callback.   
 Pass an inline callback and an array of dependencies. `useCallback` will return a meomoized version of the callback that only changes if one of the dependecies has changed.    
-`useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`.   
+`useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`.  
+
+# useEffect 
+**The function passed to useEffect will run after the render is committed to the screen.**   
+```javascriipt
+useEffect(() => {
+  const subscription = props.source.subscribe();
+  return () => {
+    // Clean up the subscription
+    subscription.unsubscribe();
+  };
+});  
+```
+也可以 Conditionally firing an effect！！ 
+```javascript
+useEffect(
+  () => {
+    const subscription = props.source.subscribe();
+    return () => {
+      subscription.unsubscribe();
+    };
+  },
+  [props.source],
+);
+```
+这样在 `props.source` 改变后才会fire useEffect里的函数！！！ 
+
+
+
