@@ -22,6 +22,7 @@
 | 3 | [PYTHONPATH](./notes/import.md) | 梳理一下import路径问题 |
 | 4 | [Postgres Commands](./notes/postgress_commands.md)| 常见postgres commands|
 | 5 | [Heroku Setup](./notes/herokuapp.md)| 1. 常见的heroku commands <br> 2.Heroku app setup step by step|
+| 6 | [Python Unit Tests](./notes/unittests.md) |1. `mock.ANY`就可以实现类似于 `assert_called_with_partion_args`这样的功能 |
 | | **Frontend** | |
 | 1 | [Template inheritance](./notes/templates.md)| flask html里面的`block`, `extend`, `super`.. 等代表什么呢？|
 | 2 | [Bootstrap](./notes/bootstrap.md) | 1. 如何导入bootstrap? |
