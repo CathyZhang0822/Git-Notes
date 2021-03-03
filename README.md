@@ -42,6 +42,7 @@
 | | **React** | |
 | 1 | [React - Component](./notes/component.md) |1. `React.Componenet` 有两种 function / class 2. Props & State 3. Life cycle|
 | 2 | [Promise](./notes/promise.md)| 感觉是把一个async function包装成 sync-like|
+| 3 | [Fundamentals](./notes/fundamentals.md) | 一些基础知识|
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
