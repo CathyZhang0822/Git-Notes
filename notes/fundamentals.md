@@ -23,5 +23,5 @@ ReactDOM.render(
 # Functional Components
 1. 就是javascript functions. Input: `Props`. Outpu: html (JSX)
 2. 这里终于了解了import/export 名称不match的情况！
-假如说我们有另一个file里面定义了一个 `Greet` component. 这时候我们在另一个file来Import它，可以不用 `Greet`这个名字，比如 `import Component2 from {./components/Greet}`    
-但是如果我们在`Greet.js`里面最后写了 `export const Greet`. 那我们import的时候必须也要用 `Greet`
+假如说我们有另一个file里面定义了一个 `Greet` component. 这时候我们在另一个file来Import它，可以不用 `Greet`这个名字，比如 `import Component2 from ./components/Greet`    
+但是如果我们在`Greet.js`里面最后写了 `export const Greet`. 那我们import的时候必须也要用 `import { Greet } from "./components/Greet"`. 也要注意有括号和没括号的区别！   
