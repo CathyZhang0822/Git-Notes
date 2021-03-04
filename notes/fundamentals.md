@@ -28,5 +28,6 @@ ReactDOM.render(
 # Class Components
 1. 要 extents React的Component class
 2. 相比于Functional Components 有 state, 还有 `this` keyword，可以用hooks
-3. 也要 export
+3. 必须有 render() function
+4. 也要 export
 
