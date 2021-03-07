@@ -22,12 +22,24 @@ ReactDOM.render(
 ```
 # Functional Components
 1. 就是javascript functions. Input: `Props`. Outpu: html (JSX)
-2. 这里终于了解了import/export 名称不match的情况！
+2. Default export   
+这里终于了解了import/export 名称不match的情况！
 假如说我们有另一个file里面定义了一个 `Greet` component，但是有default export (id: `export default Greet`). 这时候我们在另一个file来Import它的时候，可以不用 `Greet`这个名字，也可以不用大括号，比如 `import Component2 from ./components/Greet`      
 但是如果我们在`Greet.js`里面最后写了 `export const Greet`. 那我们import的时候必须也要用 `import { Greet } from "./components/Greet"`. 也要注意有括号和没括号的区别！   
 # Class Components
 1. 要 extents React的Component class
 2. 相比于Functional Components 有 state, 还有 `this` keyword，可以用hooks
-3. 必须有 render() function
+3. 必须有 render(return()) function
 4. 也要 export
+# Props vs State
+Props:
+- props get passed to the componenet
+- props are immutable
+- props -> Functional Components; this.props -> Class Components
 
+State:
+- state is managed within the component
+- Variables declared in the function body
+- State can be changed
+- `useState` Hook - Functional Components
+- `this.state` - Class Components
