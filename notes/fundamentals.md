@@ -43,3 +43,6 @@ State:
 - State can be changed
 - `useState` Hook - Functional Components
 - `this.state` - Class Components
+# setState
+为什么必须要用`setState` 而不能直接修改state（比如 `this.state.count = 10`)呢？因为第二种虽然可以改变state，但是无法Render UI.
+`setState` 可以加callback function! setState(..new state.., callback())
