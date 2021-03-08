@@ -59,3 +59,4 @@ this.setState(
   }
 )
 ```
+这里涉及到一个顺序问题！ 如果你想运行一个f()在改变某个state之后，不要写在`setState()`外面的后面。 要写在里面的callback() function的位置！！   
