@@ -45,4 +45,17 @@ State:
 - `this.state` - Class Components
 # setState
 为什么必须要用`setState` 而不能直接修改state（比如 `this.state.count = 10`)呢？因为第二种虽然可以改变state，但是无法Render UI.
-`setState` 可以加callback function! setState(..new state.., callback())
+`setState` 可以加callback function! `setState(..new state.., callback())`
+比如：   
+```
+this.setState(
+  // 下面是新的state
+  {
+    count: this.state.count + 1
+  },
+  // 下面的是callback function, change完state会call
+  () => {
+    console.log('Callback value', this.state.count)
+  }
+)
+```
