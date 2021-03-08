@@ -44,19 +44,44 @@ State:
 - `useState` Hook - Functional Components
 - `this.state` - Class Components
 # setState
+- Always make use of `setState` and never modify the state directly
+- Code has to be executed after the state has been updated? Place the code in the call back function which is the second arugment to the setState method.
+- When you have to update state based on the previous state value, pass in a **function** as an argument instead of the regular object.
 为什么必须要用`setState` 而不能直接修改state（比如 `this.state.count = 10`)呢？因为第二种虽然可以改变state，但是无法Render UI.
 `setState` 可以加callback function! `setState(..new state.., callback())`
 比如：   
 ```
-this.setState(
-  // 下面是新的state
-  {
-    count: this.state.count + 1
-  },
-  // 下面的是callback function, change完state会call
-  () => {
-    console.log('Callback value', this.state.count)
-  }
-)
+increment () {
+  this.setState(
+    // 下面是新的state
+    {
+      count: this.state.count + 1
+    },
+    // 下面的是callback function, change完state会call
+    () => {
+      console.log('Callback value', this.state.count)
+    }
+  )
+}
 ```
 这里涉及到一个顺序问题！ 如果你想运行一个f()在改变某个state之后，不要写在`setState()`外面的后面。 要写在里面的callback() function的位置！！   
+但是上面的例子有个问题，就是如果我们这样做：   
+```
+incrementFive() {
+  increment ()
+  increment ()
+  increment ()
+  increment ()
+  increment ()
+}
+```
+然后运行 `incrementFive()`， 最后得到的`this.state.count`还是1，而不是5.   
+因为react会把多个`setState` group到一起。解决办法就是不要pass state object到`setState`，要pass 一个function: 
+```
+increment() {
+  this.setState(prevState => ({
+    count: preState.count + 1
+  }))
+  console.log('Callback value', this.state.count)
+}
+```
