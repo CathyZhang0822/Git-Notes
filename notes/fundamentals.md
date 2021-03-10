@@ -85,3 +85,14 @@ increment() {
   console.log('Callback value', this.state.count)
 }
 ```
+# Destructuring props and state
+比如：
+function component:   
+```
+const {name, heroName} = props;
+```
+class component:
+```
+const {name, heroName} = this.props;
+const {state1, state2} = this.state;
+```
