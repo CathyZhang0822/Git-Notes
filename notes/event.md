@@ -41,3 +41,4 @@ class EventBind extends Component {
   }
 }
 ```
+这样会得到error: Cannot read property 'setState' of undefined
