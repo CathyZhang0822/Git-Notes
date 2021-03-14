@@ -24,17 +24,18 @@ class EventBind extends Component {
       message: 'Hello'
     }
     
-    clickHandler(){
+   }
+   clickHandler(){
       this.setState({
         message: 'Goodbye'
       })
-    }
+   }
     
     render() {
       return (
         <div>
           <div> {this.state.message} </div>
-          <button onClick={this.clickHander> Click </button>
+          <button onClick={this.clickHander}> Click </button>
         </div>
       )
     }
@@ -43,5 +44,27 @@ class EventBind extends Component {
 ```
 这样会得到error: Cannot read property 'setState' of undefined. 所以我们必须要bind event handlers!!    
 (至于为什么this会是undefined, it's all about JS, not react related)   
-
-
+有三种binding的方法：   
+1. Binding in the render method
+`<button onClick={this.clickHander.bind(this)}> Click </button>`
+2. Arrow function
+`<button onClick={() => this.clickHandker()}> Click </button>`
+3. 在constructor里面bind
+```
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+      message: 'Hello'
+    }
+    this.clickHandler = this.clickHander.bind(this)
+   }
+```
+4. 也是Arrow function和2本质一样
+```
+   clickHandler = () => {
+      this.setState({
+        message: 'Goodbye'
+      })
+   }
+```
