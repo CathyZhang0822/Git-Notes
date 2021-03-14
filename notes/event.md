@@ -41,4 +41,7 @@ class EventBind extends Component {
   }
 }
 ```
-这样会得到error: Cannot read property 'setState' of undefined
+这样会得到error: Cannot read property 'setState' of undefined. 所以我们必须要bind event handlers!!    
+(至于为什么this会是undefined, it's all about JS, not react related)   
+
+
