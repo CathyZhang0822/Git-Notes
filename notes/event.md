@@ -12,3 +12,32 @@ function FunctionClick(){
 注意`{clickHandler}`不要写成 `{clickHandler{}}`
 
 # Binding Event Handlers
+举个例子：比如说我想创建一个componet, 里面包含button和text，然后click button text就会变换文字    
+```js
+import React, { Component } from 'react'
+
+class EventBind extends Component {
+  constructor(props) {
+    super(props)
+    
+    this.state = {
+      message: 'Hello'
+    }
+    
+    clickHandler(){
+      this.setState({
+        message: 'Goodbye'
+      })
+    }
+    
+    render() {
+      return (
+        <div>
+          <div> {this.state.message} </div>
+          <button onClick={this.clickHander> Click </button>
+        </div>
+      )
+    }
+  }
+}
+```
