@@ -68,3 +68,5 @@ class EventBind extends Component {
       })
    }
 ```
+
+什么时候需要bind?? **当我们用this keyword的时候**
