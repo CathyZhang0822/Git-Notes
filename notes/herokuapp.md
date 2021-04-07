@@ -27,6 +27,8 @@ Web URL:        https://yuelin.herokuapp.com/
 ```
 ### Deploying code
 `git push heroku master`
+https://dashboard.heroku.com/apps/yuelin/deploy/github
+和Github integrate到一起了
 
 ### Test locally
 `heroku local`
