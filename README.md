@@ -44,7 +44,7 @@
 | 2 | [Promise](./notes/promise.md)| 感觉是把一个async function包装成 sync-like|
 | 3 | [Fundamentals](./notes/fundamentals.md) | 一些基础知识: functional/class component; props/state|
 | 4 | [Event](./notes/event.md)|1. Event handling 2.Binding Event Handlers |
-| 5 | [Flow](./notes/flow.md)|Flow 101|
+| 5 | [Flow](./notes/flow.md)|1. types(primary types, function types...)|
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
