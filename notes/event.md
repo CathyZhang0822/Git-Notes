@@ -12,6 +12,7 @@ function FunctionClick(){
 注意`{clickHandler}`不要写成 `{clickHandler{}}`
 
 # Binding Event Handlers
+根本原因：this在Javascript的Eventhandler里面是 `undefined`   
 举个例子：比如说我想创建一个componet, 里面包含button和text，然后click button text就会变换文字    
 ```js
 import React, { Component } from 'react'
