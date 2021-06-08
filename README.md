@@ -45,6 +45,7 @@
 | 3 | [Fundamentals](./notes/fundamentals.md) | 一些基础知识: functional/class component; props/state|
 | 4 | [Event](./notes/event.md)|1. Event handling 2.Binding Event Handlers |
 | 5 | [Flow](./notes/flow.md)|1. types(primary types, function types...)|
+| 6 | [Conditional Rendering](./notes/crendering.md)|1. if/else 2.Element variables 3.Ternary conditional operator 4.Short circuit operator |
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
