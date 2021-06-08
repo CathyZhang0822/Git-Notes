@@ -46,6 +46,7 @@
 | 4 | [Event](./notes/event.md)|1. Event handling 2.Binding Event Handlers |
 | 5 | [Flow](./notes/flow.md)|1. types(primary types, function types...)|
 | 6 | [Conditional Rendering](./notes/crendering.md)|1. if/else 2.Element variables 3.Ternary conditional operator 4.Short circuit operator |
+| 7 | [List Rendering](./notes/listrendering.md)|`map()` method|
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
