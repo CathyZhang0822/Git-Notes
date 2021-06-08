@@ -4,6 +4,7 @@ https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw - 看的这位宝藏博
 # Create a new app
 1. 记住React是一个js的library, 不是一个framework!
 2. `npx create-react-app hello-world`
+3. `npm start`
 
 # Folder structure
 1. public folder 里面有一个 `index.html`，这是整个app唯一(?)的一个Html。因为我们要全权让React来render html的body。   
