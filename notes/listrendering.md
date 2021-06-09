@@ -16,3 +16,9 @@ function NameList() {
 
 export default NameList;
 ```
+# List and Keys
+有时候我们会看到这样的warning msg: "Each child in an array or iterator should have a unique 'key' prop"   
+怎样理解：
+1. 在array的每个item都要有一个 `key` prop. 而且是只能上游传入！不能下游access! 
+2. 并且每个item的`key`value都要是unique的  
+可以这样：`const personList = persons.map(person => <Person key={person.id} person={person} />) 
