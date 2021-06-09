@@ -30,3 +30,8 @@ export default NameList;
 const names = ['A', 'B', 'C']
 const nameList = names.map((name, index) => <h2 key={index}>{name}</h2>)
 ```
+但是不建议这么用！会有问题。 https://www.youtube.com/watch?v=xlPxnc5uUPQ&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=19 for more info.  
+When to use index as a key?   
+1. The items in your list do not have a unique id. (If items have a unique id, always go with it)   
+2. The list is as static list and will not change. (You are never adding items or removing items)
+3. The list will never be reordered or filtered.
