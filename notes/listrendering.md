@@ -21,4 +21,4 @@ export default NameList;
 怎样理解：
 1. 在array的每个item都要有一个 `key` prop. 而且是只能上游传入！不能下游access! 
 2. 并且每个item的`key`value都要是unique的  
-可以这样：`const personList = persons.map(person => <Person key={person.id} person={person} />) 
+可以这样：`const personList = persons.map(person => <Person key={person.id} person={person} />)`
