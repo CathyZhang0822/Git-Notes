@@ -47,6 +47,7 @@
 | 5 | [Flow](./notes/flow.md)|1. types(primary types, function types...)|
 | 6 | [Conditional Rendering](./notes/crendering.md)|1. if/else 2.Element variables 3.Ternary conditional operator 4.Short circuit operator |
 | 7 | [List Rendering](./notes/listrendering.md)|1. `map()` method, 注意传入的是method! 2. Lists and Keys|
+| 8 | [Styling and CSS basics](./notes/reactcss.md)|1. 使用CSS file 2. Inline Styling 3. CSS module |
 | | **Frontend Testing** | |
 | 1 | [ShallowWrapper Debug](./notes/shallowwrapperdebug.md)| Test的时候想知道wrapper里面是什么东西 |
 | | **Clean Code**| |
