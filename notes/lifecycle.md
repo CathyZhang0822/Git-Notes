@@ -3,6 +3,26 @@
 2. Mouting, Updating, Unmounting and Error Handling
 3. List of functions of cycling methods
 
+# What's is mounting? 
+首先要理解mounting是什么
+1. 首先要理解，什么是DOM(Document Object Model)
+就是HTML的树状结构
+```
+html
+|_ head
+|_ body
+    |_ id="root"  // <div id="root"></div>
+```
+在react app的index.js里面   
+```
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
+```
+2. What is Mount and Unmount？
+Component is Mounted when it's inserted into the DOM   
+当一个component 被mounted，它的其他children component也会被mounted
 
 ## Mounting Methods
 主要有三个：
